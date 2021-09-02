@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir este site em dispositivos diferentes ou redimensione a janela do navegador que você está usando.
+    </p>
+    <picture>
+        <source media="(max-width: 790px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1090px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+    <audio preload="metadata" controls>
+        <source src="midia/Tracks Of My Fears - John Deley and the 41 Players.mp3" type="audio/mpeg">
+        <p>
+            Seu navegador não suporta áudio <a href="midia/Tracks Of My Fears - John Deley and the 41 Players.mp3" download="tomf.mp3" type="audio/mpeg"></a>
+        </p>
+    </audio>
+</body>
+</html>
