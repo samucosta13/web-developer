@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script>
-        window.alert('Boas vindas ao Digimundo!') // mensagem provisória de recepção
-        
+        var s = window.prompt('Boas vindas ao Digimundo! Como você se chama? ') // saudação e entrada de nome para a variável s
+        s = `Aproveite essa experiência, ${s}` // formatei o valor de s com interpolação (?) usando TEMPLATE STRING
+        window.alert(s) // saída do valor recebido pela variável s na linha acima
     </script>
 </body>
 </html>
